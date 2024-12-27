@@ -1,0 +1,189 @@
+<!--- Créé: 21/04/2023 par Mahroum Safuan 1er1 --->
+
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <title>L'incroyable Quiz de Safuan</title>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+
+<body class="page1">
+
+<!--- Barre gris pour faire joli --->
+<header>
+</header>
+
+<!------- INTRODUCTION ------->
+<center>
+<h1 class="animate__animated animate__fadeInDown"> Bienvenue sur le Quiz de NSI ! </h1>
+
+<img src="../images/nsi.jpeg" alt="Image1" title="Programme de NSI 2023" width="550" height="340" class="image_top animate__animated animate__fadeInDown animate__delay-1s"/>
+
+<h2 class="animate__animated animate__bounceIn animate__delay-2s">
+  Dans ce site web vous devez répondre à 5 questions sur le programme de NSI. <br/>
+  Vous serez capable de répondre correctement ? <br/>
+  (Vous devez activer les alertes du navigateur !) <br/>
+  Voici les questions : </h2>
+
+
+
+<!------- Question 1 ------->
+<img src="../images/Question (1).jpg" alt="Quiz1" width="300" height="130" class="image_top animate__animated animate__zoomInDown animate__delay-2s"/>
+
+<h3 class="animate__animated animate__fadeInDown animate__delay-3s">Le langage Python s'appelle Python car c'est l'animal préferé du créateur.</h3>
+
+<!--- Boutons Vrai ou Faux--->
+<input type ="button" value="VRAI" onclick="fenetre1('NON!! ')"/> <h2> OU </h2> <input type ="button" value="FAUX" onclick="fenetre1('BRAVO!! ')"/>
+
+<script>
+function fenetre1(x)
+{
+alert(x + 'Python s appelle comme ça car le createur adore le groupe Monty Python, ce dernier est une troupe d humoristes où l humour du groupe leur a rendu célèbre. ');
+}
+</script>
+
+
+
+<!------- Questions 2 ------->
+<img src="../images/Question (2).jpg" alt="Quiz1" width="300" height="130" class="image_top animate__animated animate__zoomInDown animate__delay-3s"/>
+
+<h3 class="animate__animated animate__fadeInDown animate__delay-4s">Une machine (PC Bureau) peut être composée...</h3>
+
+<!--- Liste déroulante --->
+<select id="choix1" name="PC" onchange="selection1()">
+  <option value="0"> Choisir une option</option>
+  <option value="1"> 1) D'une CPU Lays i6 avec une carte graphique NVIDIA</option>
+  <option value="2"> 2) D'un moteur Mercedes</option>
+  <option value="3"> 3) D'un seul disque dur et 2go de RAM</option>
+  <option value="4"> 4) D'un Hamster qui sert comme source d'énergie</option>
+</select>
+
+<script>
+function selection1() {
+ const selecteur = document.getElementById("choix1");
+ const monChoix = selecteur.options[selecteur.selectedIndex];
+ alert('Vous avez choisi la réponse ' + monChoix.value + ', la réponse 3 est la bonne (Ex: Windows XP).');
+}
+</script>
+
+
+
+<!------- Questions 3 ------->
+<img src="../images/Question (3).jpg" alt="Quiz1" width="300" height="130" class="image_top animate__animated animate__zoomInDown animate__delay-3s"/>
+
+<h3 class="animate__animated animate__fadeInDown animate__delay-4s">Les dictionnaires en Python sont souvent utilisés pour...</h3>
+
+<!--- Liste déroulante --->
+<select id="choix2" name="Stock" onchange="selection2()">
+  <option value="0"> Choisir une option</option>
+  <option value="1"> Stocker uniquement des chaînes de caractères.</option>
+  <option value="2"> Stocker des données aléatoires et désordonnées.</option>
+  <option value="3"> Stocker des données et des images</option>
+  <option value="4"> Stocker des données qui doivent être recherchées.</option>
+</select>
+<script>
+function selection2() {
+ const selecteur = document.getElementById("choix2");
+ const monChoix = selecteur.options[selecteur.selectedIndex];
+ alert('Vous avez choisi la réponse ' + monChoix.value + ', la réponse 4 est la bonne.');
+}
+</script>
+
+
+
+<!-------- Question 4 -------->
+<img src="../images/Question (4).jpg" alt="Quiz1" width="300" height="130" class="image_top animate__animated animate__zoomInDown animate__delay-3s"/>
+
+<h3 class="animate__animated animate__fadeInDown animate__delay-4s"> Pour faire des portes logiques on utilise les opérateurs... <br/>
+
+<br/> <!--- Espace vide --->
+
+  1) In / And / When / For <br/>
+  2) Xor / Not / And / Or <br/>
+  3) Not / For / Xor / And <br/>
+  4) Xor / When / Or / Wait</h3>
+
+<FORM>
+  <input type="text" name="Valeur_Reponse_Q4" id="Id_Reponse_Q4" value="" />
+  <input type="button" value="Valider" onclick="MaFonctionQ4();" />
+</FORM>
+
+<!--- Affichage du réslutat ici --->
+  <h2 id='resultat_Q4'> Entrez un chiffre entre 1 et 4 :</h2>
+
+<script>
+function MaFonctionQ4()
+{
+ var reponse = document.getElementById("Id_Reponse_Q4").value;
+
+ if (reponse=='1')
+ {document.getElementById('resultat_Q4').innerHTML= 'FAUX !!';}
+ else if (reponse=='2')
+ {document.getElementById('resultat_Q4').innerHTML= 'BRAVO !!';}
+ else if (reponse=='3')
+ {document.getElementById('resultat_Q4').innerHTML= 'FAUX !!';}
+ else if (reponse=='4')
+ {document.getElementById('resultat_Q4').innerHTML= 'FAUX !!';}
+ else
+ {document.getElementById('resultat_Q4').innerHTML= 'Entrez un chiffre entre 1 et 4 !';}
+}
+</script>
+
+
+
+<!------- Questions 5 ------->
+<img src="../images/Question (5).jpg" alt="Quiz1" width="300" height="130" class="image_top animate__animated animate__zoomInDown animate__delay-3s"/>
+
+<h3 class="animate__animated animate__fadeInDown animate__delay-4s">Le langage Java Script est...</h3>
+
+<!--- PLusieurs boutons --->
+<input type ="button" value="L'evolution du langage JAVA" onclick="fenetre('NON!! ')"/> <input type ="button" value="le CSS 2.0 et plus amelioré" onclick="fenetre('FAUX !! ')"/> <input type ="button" value="Le langage pour faire des sites interactives" onclick="fenetre('BRAVO!! ')"/> <h2>
+
+<script>
+function fenetre(x)
+{
+alert(x + 'Java Script est utilisé pour faire interagir l utilisateur avec le site web et permet de faire des sites webs comme celui ci');
+}
+</script>
+
+
+
+<!--- Fin du site web --->
+<h2 class="animate__animated animate__bounceIn animate__delay-4s"> Vous avez arrivé à la fin du questionnaire, <br/>
+
+<!--- Affichage du réslutat ici --->
+<h2 id='resultat_fin'> Avez-vous réussi ?</h2>
+
+<img src="../images/steve.png" alt="Fin" width="300" height="300" class="image_top animate__animated animate__zoomInDown animate__delay-4s"/>
+
+<FORM>
+  <input type="text" name="Valeur_Reponse_fin" id="Id_Reponse_fin" value="" />
+  <input type="button" value="Valider" onclick="MaFonctionFin();" />
+</FORM>
+
+<script>
+function MaFonctionFin()
+{
+ var reponse = document.getElementById("Id_Reponse_fin").value;
+
+ if (reponse.toLowerCase()=='oui')
+ {document.getElementById('resultat_fin').innerHTML= 'Félicitations !!';}
+ else if (reponse.toLowerCase()=='non')
+ {document.getElementById('resultat_fin').innerHTML= 'Dommage...';}
+ else
+ {document.getElementById('resultat_fin').innerHTML= 'Je n ai pas compris, dites moi "Oui" ou "Non" ';}
+}
+</script>
+
+
+
+</center>
+<footer>
+  <h2>Merci de votre visite !</h2>
+  <h4>Créé par Mahroum Safuan 1ér1</h4>
+</footer>
+</body>
+</html>
