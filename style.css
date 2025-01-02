@@ -1,0 +1,61 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.page1 {
+  background-image: url("images/wallpaper.jpg");
+  background-size: 100%;
+}
+
+.image_top {
+  display: block;
+  margin: 0 auto;
+  border: 8px solid gray;
+  border-radius: 10px;
+}
+
+
+
+h1 {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 6px 6px 5px black;
+  text-shadow: -3px -3px 0px black, 3px -3px 0px black, -3px 3px 0px black, 3px 3px 0px black;
+}
+
+h2 {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
+}
+
+h3 {
+  color: white;
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: -3px -3px 0px black, 3px -3px 0px black, -3px 3px 0px black, 3px 3px 0px black;
+}
+
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  z-index: 1
+}
